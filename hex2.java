@@ -16,6 +16,7 @@ public class hex2 {
             if (arr[i] < min) {
                 min = arr[i];
             } else {
+
                 int profit = arr[i] - min;
                 if (profit > max) {
                     max = profit;
