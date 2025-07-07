@@ -9,20 +9,19 @@ public class hex2 {
         int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
             arr[i] = s.nextInt();
-        }
-        int min = arr[0];
-        int max = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] < min) {
-                min = arr[i];
-            } else {
+            int min = arr[0];
+            int max = 0;
+            for (int i = 0; i < arr.length; i++) {
+                if (arr[i] < min) {
+                    min = arr[i];
+                } else {
 
-                int profit = arr[i] - min;
-                if (profit > max) {
-                    max = profit;
+                    int profit = arr[i] - min;
+                    if (profit > max) {
+                        max = profit;
+                    }
                 }
             }
+            System.out.println(max);
         }
-        System.out.println(max);
     }
-}
